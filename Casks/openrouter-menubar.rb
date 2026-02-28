@@ -7,7 +7,14 @@ cask "openrouter-menubar" do
   desc "A menubar app to monitor and switch OpenRouter API keys"
   homepage "https://github.com/volkankurt2/openrouter-menubar"
 
-  app "OpenRouter%20Balance.app"
+  app "OpenRouter Balance.app"
+
+  postflight do
+    system_command "xattr",
+                   args: ["-cr", "#{appdir}/OpenRouter Balance.app"],
+                   sudo: false,
+                   print_stderr: false
+  end
 
   zap trash: [
     "~/Library/Application Support/openrouter-menubar",
