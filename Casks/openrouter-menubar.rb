@@ -1,6 +1,6 @@
 cask "openrouter-menubar" do
-  version "1.0.7"
-  sha256 "19c4241a902697d01fc0255b8c1bf2f4cfd60ba0db4c67c978ee833b7bd51d44"
+  version "1.0.8"
+  sha256 "ea4948e30d75b2930a1f8156403dacaa4868084df419f378819167a55930a868"
 
   url "https://github.com/volkankurt2/openrouter-menubar/releases/download/v#{version}/OpenRouter.Balance-#{version}-arm64.dmg"
   name "OpenRouter Menubar"
